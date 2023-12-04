@@ -1,4 +1,4 @@
-# gRPC with ZKP in Rust
+# Zero-Knowledge Proof (ZKP) in Rust with gRPC
 
 ## Overview
 
