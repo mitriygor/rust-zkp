@@ -1,0 +1,25 @@
+[package]
+name = "zkp-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8"
+num-bigint = {version = "0.4.4", features = ["rand"]}
+hex = { version = "0.4.3", features = [] }
+tonic = "0.10.2"
+prost = "0.12.3"
+tokio = { version = "1.34.0", features = ["macros", "rt-multi-thread"] }
+
+[build-dependencies]
+tonic-build = "0.10.2"
+
+[[bin]]
+name = "server"
+path = "./src/server.rs"
+
+[[bin]]
+name = "client"
+path = "./src/client.rs"
